@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod ugo+e *[less]
+chmod ugo+x *[less]
