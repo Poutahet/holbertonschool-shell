@@ -1,2 +1,2 @@
 #!/bin/bash
-OLDPWD="$action"
+export action="$HOME/bin:/$action"
