@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
+#5555555
 a=1
-#555555
 while [$a -ge 10]
 do
 	echo "Best Schoo"
