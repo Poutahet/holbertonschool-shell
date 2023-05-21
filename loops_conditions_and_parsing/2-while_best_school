@@ -4,5 +4,5 @@ a=1
 while [ $a -le 10 ]
 do
 	echo "Best School"
-	a=$(( x+1 ))
+	a=$(( a+1 ))
 done
