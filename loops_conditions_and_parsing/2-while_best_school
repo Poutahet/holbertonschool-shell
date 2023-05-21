@@ -3,5 +3,5 @@
 a=1
 while [$a -ge 10]
 do
-	echo "Best Schoo"
+	echo "Best School"
 done
