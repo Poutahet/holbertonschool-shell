@@ -10,7 +10,7 @@ do
 	elif [ $a -eq 9 ]
 	then
 		echo "bad luck from Japan"
-	elif [$a -eq 17 ]
+	elif [ $a -eq 17 ]
 	then
 	       	echo "bad luck from Italy"
 	fi
