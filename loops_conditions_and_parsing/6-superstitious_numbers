@@ -1,18 +1,8 @@
 #!/usr/bin/env bash
-#66666666
-a=1
-while [ $a -le 20 ]
+#6i6666666
+a=({1..20})
+b=1
+while [ $b -le 20 ]
 do
-	echo "$a"
-	if [ $a -eq 4 ]
-	then
-		echo "bad luck from China"
-	elif [ $a -eq 9 ]
-	then
-		echo "bad luck from Japan"
-	elif [ $a -eq 17 ]
-	then
-	       	echo "bad luck from Italy"
-	fi
-	a=$(( a+1 ))
-done
+	echo "$b"
+	case
