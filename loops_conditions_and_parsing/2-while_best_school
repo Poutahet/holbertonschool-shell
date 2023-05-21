@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #5555555
 a=1
-while [$a -ge 10]
+while [ $a -le 10 ]
 do
 	echo "Best School"
-	a=$((x+1))
+	a=$(( x+1 ))
 done
