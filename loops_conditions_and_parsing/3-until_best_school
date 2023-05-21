@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# 6666666
+a=1
+until [ $a=11 ]
+do
+	echo "Best School"
+	a=$(( a+1 ))
+done
