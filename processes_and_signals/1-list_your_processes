@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 # 5654
-ps -U root -u root u
+ps -u
