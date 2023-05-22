@@ -1,12 +1,18 @@
 #!/usr/bin/env bash
 #565468546
-a= ls
-declare -a arr
-for i in $a 
+a=(ls)
+word="-"
+arr=()
+for i in $a
 do
-	rev "$i"
-	for a in $i
+	for sym in $i
 	do
-		if [ $a -eq "-" ]
+		if [ "$sym" == "-" ]
 		then
-			cut -d- -f 1 "$i"
+			sed '1d' "$word"
+		fi
+		word="$word$sym"
+	done
+	arr+=( "$word" )
+done
+echo "{$arr[@]}"
