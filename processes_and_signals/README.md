@@ -1,1 +1,1 @@
- ps -U root -u root u
+ps -u --forest
