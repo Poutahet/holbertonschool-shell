@@ -2,11 +2,11 @@
 # 534654
 FILENAME="/etc/passwd"
 
-while IFC=$(read -r line)
+while IFC=$(read -r)
 do
 	USERNAME=$(cut -d':' -f1 "$IFC")
 	GROUP_ID=$(cut -d':' -f4 "$IFC" | rev | cut -d':' -f1 | rev)
-	COMMAND_SHELL=$(rev "$IFC" | -d':' -f1 | rev)
+	COMMAND_SHELL=$(rev "$IFC" | cut -d':' -f1 | rev)
 	HOME_DIRECTORY=$(cut -d':' -f6 "$IFC" | rev | cut -d':' -f1 | rev)
 	USER_ID=$(cut -d':' -f3 "$IFC" | rev | cut -d':' -f1 | rev)
 	PASSWORD=$(cut -d':' -f2 "$IFC" | rev | cut -d':' -f1 | rev)
