@@ -1,18 +1,8 @@
 #!/usr/bin/env bash
 #565468546
-a=(ls)
-word="-"
-arr=()
+a=$(ls)
 for i in $a
 do
-	for sym in $i
-	do
-		if [ "$sym" == "-" ]
-		then
-			sed '1d' "$word"
-		fi
-		word="$word$sym"
-	done
-	arr+=( "$word" )
+	file_name=${i#*-}
+	echo "$file_name"
 done
-echo "{$arr[@]}"
