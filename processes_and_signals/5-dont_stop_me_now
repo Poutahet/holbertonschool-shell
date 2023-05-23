@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# 684
+kill
+echo "Terminated"
