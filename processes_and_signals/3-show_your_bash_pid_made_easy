@@ -1,7 +1,3 @@
 #!/usr/bin/env bash
-# 656454596
-while IFS=$(ps | grep *bash*)
-do
-	var=$(cut -b' ' -f1,5)
-	echo "$var"
-done
+# 6564545960
+ps | grep bash | cut -b ' ' -f 1,5
