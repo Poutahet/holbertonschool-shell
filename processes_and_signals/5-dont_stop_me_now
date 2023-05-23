@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # 684
-kill
+kill 4-to_infinity_and_beyond
 echo "Terminated"
