@@ -2,7 +2,7 @@
 # 534654
 FILENAME="/etc/passwd"
 
-while IFC=: read -r USERNAME PASSWORD USER_ID GROUP_ID User_ID_Info HOME_DIRECTORY COMMAND_SHELL
+while IFC:= read -r USERNAME PASSWORD USER_ID GROUP_ID User_ID_Info HOME_DIRECTORY COMMAND_SHELL
 do
 	echo "The user $USERNAME is part of the $GROUP_ID gang, lives in $HOME_DIRECTORY and rides $COMMAND_SHELL. $USER_ID place is protected by the passcode $PASSWORD, more info about the user here: $User_ID_Info"
 done < $FILENAME
